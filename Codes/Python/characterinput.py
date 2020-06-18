@@ -4,5 +4,5 @@ def calc(a):
     c=2020+b
     print("You will turn 100 in "+str(c)+" years.")
 
-age=int(input("Enter your age: "))
+age=int(input("Enter your age properly: "))
 calc(age)

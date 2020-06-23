@@ -1,5 +1,5 @@
 def decide(b):
-    if(b/2==0):
+    if(b%2==0):
         print("Number is Even")
 
     else:

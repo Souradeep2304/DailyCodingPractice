@@ -1,5 +1,5 @@
 #!/bin/python3
-from fractions import gcd   
+ 
 import math
 import os
 import random
@@ -36,8 +36,11 @@ def getTotalX(a, b):
         if(i+1)==n:
              break
         maxlcm=lcm(maxlcm,a[i+1])
-
-    count = sum([1 for x in range(maxlcm, mingcd+1, maxlcm) if mingcd % x == 0])
+        
+    count = 0
+    for i in range(maxlcm, mingcd+1, maxlcm):
+        if mingcd % i==0:
+            count=count+1
  
     return count
         

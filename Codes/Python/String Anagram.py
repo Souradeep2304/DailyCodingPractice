@@ -10,7 +10,7 @@ def stringAnagram(dictionary, query):
     for q in query:
         count=dictionary.count(sorted(q))
         output.append(count)
-        
+    
     return output
 
 dictionary = ['heater', 'cold', 'clod', 'reheat', 'docl']

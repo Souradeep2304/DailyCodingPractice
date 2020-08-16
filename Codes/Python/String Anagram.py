@@ -4,12 +4,13 @@ def stringAnagram(dictionary, query):
     count = 0
   
 
+    for i in range(0,len(dictionary)):
+        dictionary[i] = sorted(dictionary[i])
+
     for q in query:
-        for dic in dictionary:
-            if(sorted(q)==sorted(dic)):
-                count=count+1
+        count=dictionary.count(sorted(q))
         output.append(count)
-        count=0
+        
     return output
 
 dictionary = ['heater', 'cold', 'clod', 'reheat', 'docl']
